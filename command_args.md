@@ -45,3 +45,14 @@ Seg.data: Dict[str, Any] = {
     }
 }
 ```
+
+## 撤回消息
+```python
+Seg.data: Dict[str, Any] = {
+    "name": "DELETE_MSG",
+    "args": {
+        "message_id": "目标消息的message_id"
+    }
+}
+```
+其中，message_id怎么搞到手看你本事，记得在自己插件里做自己到底能不能撤回对应消息的判断，因为这玩意真的是单纯根据message_id撤消息
