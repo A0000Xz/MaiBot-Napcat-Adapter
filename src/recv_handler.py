@@ -82,7 +82,6 @@ class RecvHandler:
         Returns:
             bool: 是否允许聊天
         """
-        user_id = str(user_id)
         logger.debug(f"群聊id: {group_id}, 用户id: {user_id}")
         if global_config.chat.ban_qq_bot and group_id:
             logger.debug("开始判断是否为机器人")
